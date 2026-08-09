@@ -14,7 +14,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from matplotlib.patches import FancyArrowPatch, Rectangle
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 from matplotlib.ticker import PercentFormatter
 
 
@@ -65,114 +65,170 @@ def workflow_figure(path: Path) -> None:
     ax.set_ylim(0, 1)
     ax.axis("off")
 
-    def box(x, y, w, h, text, face, size=10.5, weight="normal"):
-        ax.add_patch(Rectangle((x, y), w, h, facecolor=face, edgecolor=EDGE, linewidth=1.5))
+    def box(
+        x: float,
+        y: float,
+        w: float,
+        h: float,
+        title: str,
+        body: str,
+        face: str,
+        title_size: float = 10.6,
+        body_size: float = 10.1,
+    ) -> None:
+        ax.add_patch(
+            FancyBboxPatch(
+                (x, y),
+                w,
+                h,
+                boxstyle="round,pad=0.005,rounding_size=0.009",
+                facecolor=face,
+                edgecolor=EDGE,
+                linewidth=1.25,
+            )
+        )
+        ax.text(
+            x + w / 2,
+            y + h * 0.76,
+            title,
+            ha="center",
+            va="center",
+            fontsize=title_size,
+            color=TEXT_RED,
+            fontweight="bold",
+        )
+        ax.text(
+            x + w / 2,
+            y + h * 0.28,
+            body,
+            ha="center",
+            va="center",
+            fontsize=body_size,
+            color=TEXT_RED,
+            linespacing=1.02,
+        )
+
+    def band(x: float, y: float, w: float, h: float, text: str, face: str) -> None:
+        ax.add_patch(
+            FancyBboxPatch(
+                (x, y),
+                w,
+                h,
+                boxstyle="round,pad=0.004,rounding_size=0.008",
+                facecolor=face,
+                edgecolor=EDGE,
+                linewidth=1.2,
+            )
+        )
         ax.text(
             x + w / 2,
             y + h / 2,
             text,
             ha="center",
             va="center",
-            fontsize=size,
+            fontsize=10.1,
             color=TEXT_RED,
-            fontweight=weight,
-            linespacing=1.0,
+            fontweight="bold",
         )
 
-    def arrow(start, end):
+    def arrow(start: tuple[float, float], end: tuple[float, float]) -> None:
         ax.add_patch(
             FancyArrowPatch(
                 start,
                 end,
                 arrowstyle="-|>",
-                mutation_scale=11,
-                linewidth=1.3,
+                mutation_scale=10,
+                linewidth=1.2,
                 color=EDGE,
-                shrinkA=2,
-                shrinkB=2,
+                shrinkA=1,
+                shrinkB=1,
             )
         )
 
     ax.text(
         0.5,
-        0.985,
+        0.975,
         "Availability-audited, fold-isolated workflow",
         ha="center",
         va="top",
-        fontsize=12.5,
+        fontsize=13,
         color=TEXT_RED,
     )
-    box(0.01, 0.65, 0.20, 0.22, "OUTER\ntrain | test", "#ECEFF1", 10.5, "bold")
+
+    box(0.02, 0.69, 0.18, 0.20, "SPLIT", "train | test", "#ECEFF1")
     box(
-        0.24,
-        0.65,
-        0.34,
-        0.22,
-        "TRAIN ONLY\nimpute • split • select\ninner tune • fit",
+        0.23,
+        0.69,
+        0.31,
+        0.20,
+        "LEARN",
+        "training only\nimpute • select • tune",
         "#E8F5E9",
-        10.5,
-        "bold",
     )
-    box(0.62, 0.65, 0.14, 0.22, "FREEZE\nobjects", "#E3F2FD", 10.5, "bold")
+    box(0.57, 0.69, 0.15, 0.20, "FREEZE", "fitted model", "#E3F2FD")
     box(
-        0.80,
-        0.65,
-        0.18,
-        0.22,
-        "HELD-OUT\ntransform\nroute/predict",
+        0.75,
+        0.69,
+        0.23,
+        0.20,
+        "PREDICT",
+        "held-out\nroute • predict",
         "#FFF3E0",
-        10.5,
-        "bold",
     )
+
+    band(0.27, 0.56, 0.46, 0.07, "FOLD-ISOLATED PROTOCOL", "#F5F5F5")
+
     box(
-        0.04,
-        0.33,
+        0.05,
+        0.27,
         0.28,
         0.20,
-        "PRIMARY\nstrict-6 scenarios\nnested Extra Trees",
+        "PRIMARY",
+        "strict-6 • nested\nExtra Trees",
         "#E0F2F1",
-        10.5,
-        "bold",
     )
     box(
         0.36,
-        0.33,
+        0.27,
         0.28,
         0.20,
-        "BASELINES\nforest • boosting\nstacking",
+        "BASELINES",
+        "forest • boosting\nstacking",
         "#F3E5F5",
-        10.5,
-        "bold",
     )
     box(
-        0.68,
-        0.33,
+        0.67,
+        0.27,
         0.28,
         0.20,
-        "SENSITIVITY\nuncertain vs leaky\nfixed estimator",
+        "SENSITIVITY",
+        "uncertain • leaky\nfixed estimator",
         "#FCE4EC",
-        10.5,
-        "bold",
     )
     box(
         0.17,
-        0.04,
+        0.015,
         0.66,
-        0.20,
-        "SHARED INFERENCE\nproject bootstrap • paired tests\ncorrected repeated-CV test",
+        0.19,
+        "SHARED INFERENCE",
+        "project bootstrap • paired tests\ncorrected repeated-CV test",
         "#ECEFF1",
-        10.5,
-        "bold",
     )
-    arrow((0.21, 0.76), (0.24, 0.76))
-    arrow((0.58, 0.76), (0.62, 0.76))
-    arrow((0.76, 0.76), (0.80, 0.76))
-    arrow((0.89, 0.65), (0.18, 0.53))
-    arrow((0.89, 0.65), (0.50, 0.53))
-    arrow((0.89, 0.65), (0.82, 0.53))
-    arrow((0.18, 0.33), (0.35, 0.24))
-    arrow((0.50, 0.33), (0.50, 0.24))
-    arrow((0.82, 0.33), (0.65, 0.24))
+
+    arrow((0.20, 0.79), (0.23, 0.79))
+    arrow((0.54, 0.79), (0.57, 0.79))
+    arrow((0.72, 0.79), (0.75, 0.79))
+
+    arrow((0.50, 0.69), (0.50, 0.63))
+    ax.plot([0.50, 0.50], [0.56, 0.525], color=EDGE, linewidth=1.2)
+    ax.plot([0.19, 0.81], [0.525, 0.525], color=EDGE, linewidth=1.2)
+    arrow((0.19, 0.525), (0.19, 0.47))
+    arrow((0.50, 0.525), (0.50, 0.47))
+    arrow((0.81, 0.525), (0.81, 0.47))
+
+    arrow((0.19, 0.27), (0.19, 0.205))
+    arrow((0.50, 0.27), (0.50, 0.205))
+    arrow((0.81, 0.27), (0.81, 0.205))
     save_exact(fig, path, 2550, 1150, dpi=425)
 
 
@@ -193,7 +249,7 @@ def provenance_figure(metrics: pd.DataFrame, path: Path) -> None:
     labels = ["Leaky 14", "Uncertain 9", "Strict 6"]
     bar_colors = ["#C62828", "#D98E04", "#2A9D8F"]
     fig, axes = plt.subplots(1, 2)
-    for ax, metric, title in zip(axes, ["MAE", "Pred25"], ["MAE (person-hours)", "Pred(25), %"]):
+    for ax, metric, title in zip(axes, ["MAE", "Pred25"], ["MAE in person-hours", "Pred(25), %"]):
         rows = [metric_lookup(metrics, "scale_fixed_et_sensitivity", protocol, "Global", metric) for protocol in protocols]
         values = np.asarray([row["estimate_full_precision"] for row in rows])
         lower = values - np.asarray([row["ci_2_5"] for row in rows])
@@ -202,21 +258,20 @@ def provenance_figure(metrics: pd.DataFrame, path: Path) -> None:
         ax.bar(positions, values, color=bar_colors, width=0.62)
         ax.errorbar(positions, values, yerr=np.vstack([lower, upper]), fmt="none", color=EDGE, capsize=4, linewidth=1.3)
         ax.set_xticks(positions, labels)
-        ax.set_title(title, fontsize=12)
-        ax.tick_params(axis="x", labelsize=11.5)
-        ax.tick_params(axis="y", labelsize=11.5)
+        ax.set_title(title, fontsize=12.5)
+        ax.tick_params(axis="x", labelsize=12)
+        ax.tick_params(axis="y", labelsize=12)
         ax.grid(axis="y", alpha=0.8)
         ax.set_axisbelow(True)
         if metric == "Pred25":
             ax.set_ylim(0, 105)
             ax.yaxis.set_major_formatter(PercentFormatter(xmax=100, decimals=0))
-    fig.suptitle("Feature provenance changes apparent accuracy", fontsize=13.5, color=TEXT_RED)
-    fig.subplots_adjust(left=0.07, right=0.98, bottom=0.24, top=0.78, wspace=0.22)
-    save_exact(fig, path, 2850, 900, dpi=425)
+    fig.subplots_adjust(left=0.07, right=0.985, bottom=0.28, top=0.80, wspace=0.22)
+    save_exact(fig, path, 2850, 720, dpi=425)
 
 
 def performance_figure(metrics: pd.DataFrame, path: Path) -> None:
-    methods = list(COLORS)
+    methods = ["Global", "Global + MI", "Quantile", "Quantile + MI"]
     metric_titles = [("MAE", "MAE"), ("RMSE", "RMSE"), ("Pred25", "Pred(25), %"), ("R2", r"$R^2$")]
     fig, axes = plt.subplots(2, 2)
     for axis_index, (ax, (metric, title)) in enumerate(zip(axes.flat, metric_titles)):
@@ -248,7 +303,7 @@ def performance_figure(metrics: pd.DataFrame, path: Path) -> None:
             transform=ax.transAxes,
             ha="right",
             va="top",
-            fontsize=11.5,
+            fontsize=12,
             color=TEXT_RED,
             bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.82, "pad": 0.8},
         )
@@ -256,14 +311,11 @@ def performance_figure(metrics: pd.DataFrame, path: Path) -> None:
             ax.xaxis.tick_top()
             ax.tick_params(axis="x", labeltop=True, labelbottom=False)
         ax.grid(axis="x", alpha=0.8)
-        ax.tick_params(labelsize=11.5)
+        ax.tick_params(labelsize=12)
         if metric == "Pred25":
             ax.xaxis.set_major_formatter(PercentFormatter(xmax=100, decimals=0))
-    fig.suptitle("Strict-6 nested Extra Trees: shared 95% confidence intervals", fontsize=13.5, color=TEXT_RED)
-    # Keep the four panels legible at the final 6.1-inch manuscript width,
-    # while avoiding a tall canvas that forces an otherwise unnecessary page.
-    fig.subplots_adjust(left=0.18, right=0.98, bottom=0.12, top=0.78, hspace=0.24, wspace=0.26)
-    save_exact(fig, path, 2850, 1120, dpi=425)
+    fig.subplots_adjust(left=0.18, right=0.985, bottom=0.10, top=0.82, hspace=0.20, wspace=0.26)
+    save_exact(fig, path, 2850, 980, dpi=425)
 
 
 def paired_delta_frame(predictions: pd.DataFrame) -> pd.DataFrame:
@@ -303,20 +355,19 @@ def paired_figure(predictions: pd.DataFrame, path: Path) -> None:
         parts[key].set_linewidth(1.2)
     ax.axhline(0, color=TEXT_RED, linestyle="--", linewidth=1.4)
     ax.set_xticks(np.arange(1, 4), methods)
-    ax.set_title("Per-project error difference (five-repeat mean)", fontsize=13)
-    ax.text(
-        0.01,
-        0.95,
-        "Error difference (hours); positive favors comparator",
-        transform=ax.transAxes,
+    fig.text(
+        0.078,
+        0.955,
+        "Error difference in hours; positive favors comparator",
+        ha="left",
         va="top",
         fontsize=11.5,
         color=TEXT_RED,
     )
     ax.grid(axis="y", alpha=0.8)
     ax.tick_params(labelsize=11.5)
-    fig.subplots_adjust(left=0.16, right=0.98, bottom=0.20, top=0.82)
-    save_exact(fig, path, 2850, 900, dpi=425)
+    fig.subplots_adjust(left=0.078, right=0.985, bottom=0.25, top=0.80)
+    save_exact(fig, path, 2850, 670, dpi=425)
 
 
 def category_figure(summary: pd.DataFrame, path: Path) -> None:
@@ -361,15 +412,14 @@ def mi_figure(mi_records: pd.DataFrame, path: Path) -> None:
     image = ax.imshow(matrix.to_numpy(), aspect="auto", cmap="YlGnBu", vmin=0, vmax=1)
     ax.set_xticks(np.arange(len(feature_order)), feature_order, rotation=0, ha="center")
     ax.set_yticks(np.arange(len(row_order)), row_order)
-    ax.set_title("Mutual-information selection stability", fontsize=13)
     ax.tick_params(labelsize=11.5)
     colorbar = fig.colorbar(image, ax=ax, fraction=0.028, pad=0.02)
-    colorbar.ax.set_title("Frequency", color=TEXT_RED, fontsize=11.5, pad=4)
+    colorbar.set_ticks([0.0, 0.5, 1.0])
     colorbar.ax.tick_params(colors=TEXT_RED, labelsize=11.5)
     for spine in colorbar.ax.spines.values():
         spine.set_edgecolor(EDGE)
-    fig.subplots_adjust(left=0.32, right=0.88, bottom=0.31, top=0.78)
-    save_exact(fig, path, 2850, 850, dpi=425)
+    fig.subplots_adjust(left=0.315, right=0.90, bottom=0.25, top=0.96)
+    save_exact(fig, path, 2850, 760, dpi=425)
 
 
 def parse_args() -> argparse.Namespace:
@@ -393,7 +443,9 @@ if __name__ == "__main__":
     provenance_figure(metrics_frame, output_dir / "image3.png")
     performance_figure(metrics_frame, output_dir / "image4.png")
     paired_figure(prediction_frame, output_dir / "image5.png")
-    category_figure(category_frame, output_dir / "image6.png")
-    mi_figure(mi_frame, output_dir / "image7.png")
-    for path in sorted(output_dir.glob("image*.png")):
+    # Category adequacy is reported in manuscript Table 7; retain its plot as
+    # a supplementary diagnostic rather than assigning it a figure number.
+    category_figure(category_frame, output_dir / "diagnostic_category_adequacy.png")
+    mi_figure(mi_frame, output_dir / "image6.png")
+    for path in sorted(output_dir.glob("*.png")):
         print(path)

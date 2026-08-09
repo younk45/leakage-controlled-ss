@@ -36,12 +36,12 @@ The empirical conclusions are conditioned on this 499-project dataset and should
 ├── outputs/
 │   └── revision_v1/
 └── figures/
+    ├── diagnostic_category_adequacy.png
     ├── image2.png
     ├── image3.png
     ├── image4.png
     ├── image5.png
-    ├── image6.png
-    └── image7.png
+    └── image6.png
 ```
 
 `manuscript_source_map.json` maps every reported manuscript table and figure to its exact machine-readable source artifacts.
@@ -107,7 +107,7 @@ python generate_figures.py \
   --output-dir figures/rebuilt
 ```
 
-The generated plots use the verified full-precision artifacts. Display rounding is applied only during rendering.
+The generated plots use the verified full-precision artifacts. `image2.png` through `image6.png` correspond to manuscript Figs. 1-5; `diagnostic_category_adequacy.png` supplements Table 7. Display rounding is applied only during rendering.
 
 ## Dataset provenance
 

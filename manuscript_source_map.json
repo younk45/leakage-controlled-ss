@@ -78,13 +78,6 @@
       ]
     },
     "Figure 5": {
-      "description": "Minimum training-category sizes",
-      "sources": [
-        "outputs/revision_v1/category_diagnostics_by_outer_fold.csv",
-        "generate_figures.py"
-      ]
-    },
-    "Figure 6": {
       "description": "Mutual-information selection stability",
       "sources": [
         "outputs/revision_v1/mutual_information_by_outer_training_set.csv.gz",
