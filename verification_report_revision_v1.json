@@ -1,0 +1,19 @@
+{
+  "bootstrap_shape": [
+    5000,
+    499
+  ],
+  "dataset_sha256": "2bb0d6a4f1055029c4c945ec60a5159437c74a92cfe99cf79101755814eb0f21",
+  "identical_global_metric_estimates_and_intervals": true,
+  "identical_global_prediction_vectors": true,
+  "manifest_artifacts_rehashed": 17,
+  "manifest_hash_mismatches": {},
+  "maximum_absolute_metric_recalculation_error": 4.547473508864641e-12,
+  "outer_test_assignments": 2495,
+  "prediction_groups": 19,
+  "predictions_per_group": 2495,
+  "rows": 499,
+  "run_dir": "/Users/younksmacbook/.codex/.chatgpt-projects/g-p-6a250c67f7688191bcf777dc35e5b1f3/revision_work/reproducibility/outputs/revision_v1",
+  "status": "verified",
+  "total_predictions": 47405
+}

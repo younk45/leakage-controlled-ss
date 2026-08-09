@@ -1,0 +1,222 @@
+{
+  "bootstrap": {
+    "replicates": 5000,
+    "rng": "NumPy Generator with PCG64",
+    "seed": 20260807,
+    "unit": "project; all repeated out-of-fold predictions are retained"
+  },
+  "dataset": {
+    "expected_rows": 499,
+    "id_column": "ID",
+    "path": "data/china.csv",
+    "sha256": "2bb0d6a4f1055029c4c945ec60a5159437c74a92cfe99cf79101755814eb0f21",
+    "target_column": "Effort"
+  },
+  "feature_sets": {
+    "leaky14": [
+      "AFP",
+      "Input",
+      "Output",
+      "Enquiry",
+      "File",
+      "Interface",
+      "Added",
+      "Changed",
+      "Deleted",
+      "PDR_AFP",
+      "PDR_UFP",
+      "NPDR_AFP",
+      "NPDU_UFP",
+      "N_effort"
+    ],
+    "strict6": [
+      "AFP",
+      "Input",
+      "Output",
+      "Enquiry",
+      "File",
+      "Interface"
+    ],
+    "uncertain9": [
+      "AFP",
+      "Input",
+      "Output",
+      "Enquiry",
+      "File",
+      "Interface",
+      "Added",
+      "Changed",
+      "Deleted"
+    ]
+  },
+  "fixed_extra_trees": {
+    "bootstrap": false,
+    "criterion": "squared_error",
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "n_estimators": 500
+  },
+  "inner_cv": {
+    "n_splits": 3,
+    "search_iterations": 6
+  },
+  "mi_keep_fraction": 0.5,
+  "minimum_specialist_training_size": 30,
+  "model_seed_namespace": "ijies-20265081-reviewer-revision-v1",
+  "outer_cv": {
+    "n_splits": 10,
+    "seeds": [
+      10,
+      21,
+      42,
+      77,
+      100
+    ]
+  },
+  "prediction_floor": 0.0,
+  "protocol_id": "ijies-20265081-reviewer-revision-v1",
+  "search_spaces": {
+    "extra_trees": {
+      "bootstrap": [
+        false,
+        true
+      ],
+      "max_depth": [
+        null,
+        10,
+        20
+      ],
+      "max_features": [
+        0.5,
+        0.75,
+        1.0
+      ],
+      "min_samples_leaf": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "min_samples_split": [
+        2,
+        5,
+        10
+      ],
+      "n_estimators": [
+        300,
+        500
+      ]
+    },
+    "lightgbm": {
+      "colsample_bytree": [
+        0.8,
+        1.0
+      ],
+      "learning_rate": [
+        0.02,
+        0.05,
+        0.1
+      ],
+      "max_depth": [
+        -1,
+        5,
+        10
+      ],
+      "min_child_samples": [
+        10,
+        20,
+        40
+      ],
+      "n_estimators": [
+        200,
+        400
+      ],
+      "num_leaves": [
+        7,
+        15,
+        31
+      ],
+      "reg_lambda": [
+        0.0,
+        1.0,
+        5.0
+      ],
+      "subsample": [
+        0.8,
+        1.0
+      ]
+    },
+    "random_forest": {
+      "bootstrap": [
+        true
+      ],
+      "max_depth": [
+        null,
+        10,
+        20
+      ],
+      "max_features": [
+        0.5,
+        0.75,
+        1.0,
+        "sqrt"
+      ],
+      "min_samples_leaf": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "min_samples_split": [
+        2,
+        5,
+        10
+      ],
+      "n_estimators": [
+        300,
+        500
+      ]
+    },
+    "xgboost": {
+      "colsample_bytree": [
+        0.7,
+        0.9,
+        1.0
+      ],
+      "learning_rate": [
+        0.02,
+        0.05,
+        0.1
+      ],
+      "max_depth": [
+        2,
+        3,
+        5
+      ],
+      "min_child_weight": [
+        1,
+        3,
+        5
+      ],
+      "n_estimators": [
+        200,
+        400
+      ],
+      "reg_alpha": [
+        0.0,
+        0.1,
+        1.0
+      ],
+      "reg_lambda": [
+        1.0,
+        5.0,
+        10.0
+      ],
+      "subsample": [
+        0.7,
+        0.9,
+        1.0
+      ]
+    }
+  }
+}

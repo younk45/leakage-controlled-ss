@@ -1,0 +1,95 @@
+{
+  "protocol_id": "ijies-20265081-reviewer-revision-v1",
+  "manuscript_items": {
+    "Table 1": {
+      "description": "Predictor-availability audit",
+      "sources": ["config.json", "data/china.csv", "README.md"]
+    },
+    "Table 2": {
+      "description": "Empirical target-dependence identities",
+      "sources": ["data/china.csv"]
+    },
+    "Figure 1": {
+      "description": "Fold-isolated workflow",
+      "sources": ["config.json", "run_analysis.py", "generate_figures.py"]
+    },
+    "Table 3": {
+      "description": "Temporal-provenance and deliberate-leakage sensitivity",
+      "sources": [
+        "outputs/revision_v1/metrics_full_precision.csv",
+        "outputs/revision_v1/temporal_provenance_pairwise_inference.csv",
+        "outputs/revision_v1/bootstrap_project_indices.npy"
+      ]
+    },
+    "Figure 2": {
+      "description": "Feature-provenance sensitivity plot",
+      "sources": [
+        "outputs/revision_v1/metrics_full_precision.csv",
+        "outputs/revision_v1/bootstrap_project_indices.npy",
+        "generate_figures.py"
+      ]
+    },
+    "Table 4": {
+      "description": "Primary strict-six nested Extra Trees performance",
+      "sources": [
+        "outputs/revision_v1/metrics_full_precision.csv",
+        "outputs/revision_v1/oof_predictions_full_precision.csv.gz",
+        "outputs/revision_v1/bootstrap_project_indices.npy"
+      ]
+    },
+    "Figure 3": {
+      "description": "Primary strict-six metric profiles",
+      "sources": [
+        "outputs/revision_v1/metrics_full_precision.csv",
+        "outputs/revision_v1/bootstrap_project_indices.npy",
+        "generate_figures.py"
+      ]
+    },
+    "Table 5": {
+      "description": "Controlled modern-model benchmark",
+      "sources": [
+        "outputs/revision_v1/metrics_full_precision.csv",
+        "outputs/revision_v1/benchmark_pairwise_inference.csv",
+        "outputs/revision_v1/selected_parameters_by_outer_fold.csv",
+        "outputs/revision_v1/nested_tuning_candidates.csv.gz"
+      ]
+    },
+    "Table 6": {
+      "description": "Paired inference for scale scenarios",
+      "sources": [
+        "outputs/revision_v1/scale_pairwise_inference.csv",
+        "outputs/revision_v1/oof_predictions_full_precision.csv.gz",
+        "outputs/revision_v1/bootstrap_project_indices.npy"
+      ]
+    },
+    "Figure 4": {
+      "description": "Per-project mean absolute-error changes",
+      "sources": [
+        "outputs/revision_v1/oof_predictions_full_precision.csv.gz",
+        "outputs/revision_v1/scale_pairwise_inference.csv",
+        "generate_figures.py"
+      ]
+    },
+    "Table 7": {
+      "description": "Training-fold category adequacy",
+      "sources": [
+        "outputs/revision_v1/category_diagnostics_summary.csv",
+        "outputs/revision_v1/category_diagnostics_by_outer_fold.csv"
+      ]
+    },
+    "Figure 5": {
+      "description": "Minimum training-category sizes",
+      "sources": [
+        "outputs/revision_v1/category_diagnostics_by_outer_fold.csv",
+        "generate_figures.py"
+      ]
+    },
+    "Figure 6": {
+      "description": "Mutual-information selection stability",
+      "sources": [
+        "outputs/revision_v1/mutual_information_by_outer_training_set.csv.gz",
+        "generate_figures.py"
+      ]
+    }
+  }
+}

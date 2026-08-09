@@ -1,0 +1,78 @@
+{
+  "protocol_id": "ijies-20265081-reviewer-revision-v1",
+  "dataset": {
+    "path": "data/china.csv",
+    "sha256": "2bb0d6a4f1055029c4c945ec60a5159437c74a92cfe99cf79101755814eb0f21",
+    "id_column": "ID",
+    "target_column": "Effort",
+    "expected_rows": 499
+  },
+  "feature_sets": {
+    "strict6": ["AFP", "Input", "Output", "Enquiry", "File", "Interface"],
+    "uncertain9": ["AFP", "Input", "Output", "Enquiry", "File", "Interface", "Added", "Changed", "Deleted"],
+    "leaky14": ["AFP", "Input", "Output", "Enquiry", "File", "Interface", "Added", "Changed", "Deleted", "PDR_AFP", "PDR_UFP", "NPDR_AFP", "NPDU_UFP", "N_effort"]
+  },
+  "outer_cv": {
+    "n_splits": 10,
+    "seeds": [10, 21, 42, 77, 100]
+  },
+  "inner_cv": {
+    "n_splits": 3,
+    "search_iterations": 6
+  },
+  "bootstrap": {
+    "rng": "NumPy Generator with PCG64",
+    "seed": 20260807,
+    "replicates": 5000,
+    "unit": "project; all repeated out-of-fold predictions are retained"
+  },
+  "model_seed_namespace": "ijies-20265081-reviewer-revision-v1",
+  "minimum_specialist_training_size": 30,
+  "mi_keep_fraction": 0.5,
+  "prediction_floor": 0.0,
+  "fixed_extra_trees": {
+    "n_estimators": 500,
+    "criterion": "squared_error",
+    "max_features": 1.0,
+    "min_samples_leaf": 2,
+    "bootstrap": false
+  },
+  "search_spaces": {
+    "extra_trees": {
+      "n_estimators": [300, 500],
+      "max_features": [0.5, 0.75, 1.0],
+      "min_samples_leaf": [1, 2, 4, 8],
+      "min_samples_split": [2, 5, 10],
+      "max_depth": [null, 10, 20],
+      "bootstrap": [false, true]
+    },
+    "random_forest": {
+      "n_estimators": [300, 500],
+      "max_features": [0.5, 0.75, 1.0, "sqrt"],
+      "min_samples_leaf": [1, 2, 4, 8],
+      "min_samples_split": [2, 5, 10],
+      "max_depth": [null, 10, 20],
+      "bootstrap": [true]
+    },
+    "xgboost": {
+      "n_estimators": [200, 400],
+      "learning_rate": [0.02, 0.05, 0.1],
+      "max_depth": [2, 3, 5],
+      "min_child_weight": [1, 3, 5],
+      "subsample": [0.7, 0.9, 1.0],
+      "colsample_bytree": [0.7, 0.9, 1.0],
+      "reg_lambda": [1.0, 5.0, 10.0],
+      "reg_alpha": [0.0, 0.1, 1.0]
+    },
+    "lightgbm": {
+      "n_estimators": [200, 400],
+      "learning_rate": [0.02, 0.05, 0.1],
+      "num_leaves": [7, 15, 31],
+      "max_depth": [-1, 5, 10],
+      "min_child_samples": [10, 20, 40],
+      "subsample": [0.8, 1.0],
+      "colsample_bytree": [0.8, 1.0],
+      "reg_lambda": [0.0, 1.0, 5.0]
+    }
+  }
+}

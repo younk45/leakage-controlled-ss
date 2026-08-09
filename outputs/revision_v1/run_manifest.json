@@ -1,0 +1,58 @@
+{
+  "artifact_sha256": {
+    "benchmark_pairwise_inference.csv": "67304d4d736f5613f0c4523f269862efd9cb19ea79337ecdf6239d5ea5cb4966",
+    "bootstrap_descriptor.json": "db0d3a7a99eb454414e66fb446a72d4d64c158e89cba0ceccff6f1cab9d26555",
+    "bootstrap_project_indices.npy": "3ac0398b8a19c859d5d18852fa5776d1a3e68360b0fd7d40c2f1dab802d21f9b",
+    "category_diagnostics_by_outer_fold.csv": "322d0e104222df0b943123d7be24e8508d105408ca431b6a002ac2180a6271d0",
+    "category_diagnostics_summary.csv": "fedc768312642cce77dc5954a96d886a557430cd3d14001b1cbac84606b945e9",
+    "config_snapshot.json": "69b25d02baf98a63a7088a9c28a64f795d2f959782dfb8441b878163ccc7d393",
+    "fixed_scale_pairwise_inference.csv": "654fc9b1dbf8498f0d3f57dbe2d021ab3f899cff9e9a9d4a1a81bd0a42fcb700",
+    "metrics_full_precision.csv": "ad2cb26f6dec95d9f4c8d85196b7d261a7b979c731ba59ff944c8eafc6c60f9c",
+    "mutual_information_by_outer_training_set.csv.gz": "111b6ee54b171bbf5d97ee096fb2fbefcd2b32b6c70e3c165b72c616add8fbb8",
+    "nested_tuning_candidates.csv.gz": "af04f095410c7d388b3a3b226b1c90d533d07c358c2ad01deb701da52718cdaf",
+    "oof_predictions_full_precision.csv.gz": "9aac0076281e45641b24743816f39034d32e5b182d1449f2e3c4228320b6d270",
+    "outer_fold_assignments.csv": "772a31f64117b02ab742f286f321a12d184a5fd25b83c3c0b8b822278ff2f727",
+    "quality_assurance.json": "3b823bcc867e6cc8a10c81ae3e6aea8f038a48f80909afc99ef2d7b293042167",
+    "run_complete.marker": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+    "scale_pairwise_inference.csv": "f3c955538c360c8ea09499fc5b0ff301b70e34becec376a86e2ada1d30f0cc02",
+    "selected_parameters_by_outer_fold.csv": "ee6fb0a19aa1cbae79aa807efb11de116a6e15bdbd25b728372f8bb9932727ad",
+    "temporal_provenance_pairwise_inference.csv": "8bfdb71ef3e1230add84a510ab9485ac9bdd6eb01268d9c55277923940401a9d"
+  },
+  "command": "run_analysis.py --config config.json --output-dir outputs/revision_v1",
+  "completed_utc": "2026-08-09T07:53:53.991463+00:00",
+  "config_snapshot_sha256": "69b25d02baf98a63a7088a9c28a64f795d2f959782dfb8441b878163ccc7d393",
+  "config_source": "/Users/younksmacbook/.codex/.chatgpt-projects/g-p-6a250c67f7688191bcf777dc35e5b1f3/revision_work/reproducibility/config.json",
+  "dataset": {
+    "columns": 19,
+    "path": "/Users/younksmacbook/.codex/.chatgpt-projects/g-p-6a250c67f7688191bcf777dc35e5b1f3/revision_work/reproducibility/data/china.csv",
+    "rows": 499,
+    "sha256": "2bb0d6a4f1055029c4c945ec60a5159437c74a92cfe99cf79101755814eb0f21"
+  },
+  "elapsed_seconds": 1920.909912109375,
+  "environment": {
+    "lightgbm": "4.6.0",
+    "machine": "arm64",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "platform": "macOS-15.7.8-arm64-arm-64bit",
+    "python": "3.9.6 (default, Dec  2 2025, 07:27:58) \n[Clang 17.0.0 (clang-1700.6.3.2)]",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.13.1",
+    "xgboost": "2.1.4"
+  },
+  "mi_record_rows": 4200,
+  "outer_fold_count": 50,
+  "prediction_rows": 47405,
+  "protocol_id": "ijies-20265081-reviewer-revision-v1",
+  "quality_assurance": {
+    "comparison": "scale_nested_et/strict6/Global versus benchmark/strict6/Tuned Extra Trees",
+    "identical_mae_estimate_and_ci": true,
+    "identical_prediction_vectors": true,
+    "rows_compared": 2495,
+    "shared_bootstrap_file": "bootstrap_project_indices.npy"
+  },
+  "selected_fit_rows": 1450,
+  "started_utc": "2026-08-09T07:21:53.082152+00:00",
+  "status": "complete",
+  "tuning_candidate_rows": 3300
+}

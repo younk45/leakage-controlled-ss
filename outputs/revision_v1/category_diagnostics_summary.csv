@@ -1,0 +1,5 @@
+feature_set,strategy,scenario,folds,adequate_folds,minimum_observed,median_minimum,maximum_minimum
+strict6,AFP K-Means,Adequacy diagnostic only,50,0,1,1,11
+strict6,Multivariate K-Means,Adequacy diagnostic only,50,0,1,2,2
+strict6,Training-fold AFP quantiles,Quantile,50,50,146,149,150
+strict6,Training-fold AFP quantiles,Quantile + MI,50,50,146,149,150

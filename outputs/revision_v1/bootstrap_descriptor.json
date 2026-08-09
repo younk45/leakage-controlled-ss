@@ -1,0 +1,13 @@
+{
+  "dtype": "int32",
+  "file_sha256": "3ac0398b8a19c859d5d18852fa5776d1a3e68360b0fd7d40c2f1dab802d21f9b",
+  "indexing": "zero-based row positions in dataset order",
+  "replicates": 5000,
+  "rng": "NumPy Generator with PCG64",
+  "seed": 20260807,
+  "shape": [
+    5000,
+    499
+  ],
+  "unit": "project; all repeated out-of-fold predictions are retained"
+}

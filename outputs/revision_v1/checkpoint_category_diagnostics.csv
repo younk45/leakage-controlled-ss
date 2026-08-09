@@ -1,0 +1,601 @@
+feature_set,strategy,scenario,repetition,outer_seed,fold,category,training_count,test_count,q1,q2,minimum_required,adequate,kmeans_seed
+strict6,Training-fold AFP quantiles,Quantile,1,10,1,Small,152,22.0,134.0,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,1,Medium,147,11.0,134.0,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,1,Large,150,17.0,134.0,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,1,Small,152,22.0,134.0,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,1,Medium,147,11.0,134.0,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,1,Large,150,17.0,134.0,319.9999999999998,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,1,Small,418,,,,30,False,1597212421.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,1,Large,1,,,,30,False,1597212421.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,1,Medium,30,,,,30,False,1597212421.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,1,Large,2,,,,30,False,418583814.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,1,Small,402,,,,30,False,418583814.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,1,Medium,45,,,,30,False,418583814.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,2,Small,150,19.0,132.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,2,Medium,149,17.0,132.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,2,Large,150,14.0,132.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,2,Small,150,19.0,132.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,2,Medium,149,17.0,132.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,2,Large,150,14.0,132.33333333333331,323.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,2,Small,394,,,,30,False,3885229075.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,2,Large,1,,,,30,False,3885229075.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,2,Medium,54,,,,30,False,3885229075.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,2,Small,396,,,,30,False,871049065.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,2,Medium,52,,,,30,False,871049065.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,2,Large,1,,,,30,False,871049065.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,3,Small,150,16.0,131.33333333333331,310.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,3,Medium,149,15.0,131.33333333333331,310.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,3,Large,150,19.0,131.33333333333331,310.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,3,Small,150,16.0,131.33333333333331,310.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,3,Medium,149,15.0,131.33333333333331,310.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,3,Large,150,19.0,131.33333333333331,310.33333333333326,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,3,Small,384,,,,30,False,238982071.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,3,Medium,55,,,,30,False,238982071.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,3,Large,10,,,,30,False,238982071.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,3,Small,399,,,,30,False,387686563.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,3,Medium,49,,,,30,False,387686563.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,3,Large,1,,,,30,False,387686563.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,4,Small,152,17.0,132.0,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,4,Medium,147,15.0,132.0,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,4,Large,150,18.0,132.0,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,4,Small,152,17.0,132.0,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,4,Medium,147,15.0,132.0,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,4,Large,150,18.0,132.0,314.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,4,Small,419,,,,30,False,2418310569.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,4,Large,1,,,,30,False,2418310569.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,4,Medium,29,,,,30,False,2418310569.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,4,Small,402,,,,30,False,940752508.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,4,Large,2,,,,30,False,940752508.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,4,Medium,45,,,,30,False,940752508.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,5,Small,150,11.0,128.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,5,Medium,149,21.0,128.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,5,Large,150,18.0,128.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,5,Small,150,11.0,128.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,5,Medium,149,21.0,128.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,5,Large,150,18.0,128.33333333333331,314.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,5,Small,418,,,,30,False,792574438.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,5,Medium,30,,,,30,False,792574438.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,5,Large,1,,,,30,False,792574438.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,5,Small,405,,,,30,False,1967540024.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,5,Large,2,,,,30,False,1967540024.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,5,Medium,42,,,,30,False,1967540024.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,6,Small,151,18.0,132.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,6,Medium,148,16.0,132.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,6,Large,150,16.0,132.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,6,Small,151,18.0,132.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,6,Medium,148,16.0,132.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,6,Large,150,16.0,132.0,321.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,6,Small,422,,,,30,False,3845433115.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,6,Large,1,,,,30,False,3845433115.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,6,Medium,26,,,,30,False,3845433115.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,6,Large,2,,,,30,False,389328077.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,6,Small,398,,,,30,False,389328077.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,6,Medium,49,,,,30,False,389328077.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,7,Small,152,12.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,7,Medium,147,18.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,7,Large,150,20.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,7,Small,152,12.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,7,Medium,147,18.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,7,Large,150,20.0,129.0,308.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,7,Small,421,,,,30,False,609200573.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,7,Large,1,,,,30,False,609200573.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,7,Medium,27,,,,30,False,609200573.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,7,Small,403,,,,30,False,3298699909.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,7,Large,2,,,,30,False,3298699909.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,7,Medium,44,,,,30,False,3298699909.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,8,Small,152,22.0,134.0,322.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,8,Medium,147,13.0,134.0,322.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,8,Large,150,15.0,134.0,322.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,8,Small,152,22.0,134.0,322.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,8,Medium,147,13.0,134.0,322.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,8,Large,150,15.0,134.0,322.9999999999999,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,8,Small,420,,,,30,False,2518813757.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,8,Large,1,,,,30,False,2518813757.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,8,Medium,28,,,,30,False,2518813757.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,8,Small,404,,,,30,False,187080926.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,8,Large,2,,,,30,False,187080926.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,8,Medium,43,,,,30,False,187080926.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,9,Small,150,11.0,128.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,9,Medium,149,18.0,128.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,9,Large,150,21.0,128.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,9,Small,150,11.0,128.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,9,Medium,149,18.0,128.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,9,Large,150,21.0,128.33333333333331,307.33333333333326,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,9,Small,418,,,,30,False,4158372040.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,9,Large,1,,,,30,False,4158372040.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,9,Medium,30,,,,30,False,4158372040.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,9,Small,404,,,,30,False,1521325349.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,9,Large,2,,,,30,False,1521325349.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,9,Medium,43,,,,30,False,1521325349.0
+strict6,Training-fold AFP quantiles,Quantile,1,10,10,Small,150,20.0,133.66666666666666,330.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,10,Medium,150,21.0,133.66666666666666,330.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile,1,10,10,Large,150,8.0,133.66666666666666,330.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,10,Small,150,20.0,133.66666666666666,330.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,10,Medium,150,21.0,133.66666666666666,330.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,1,10,10,Large,150,8.0,133.66666666666666,330.3333333333333,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,10,Small,418,,,,30,False,805505106.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,10,Large,1,,,,30,False,805505106.0
+strict6,AFP K-Means,Adequacy diagnostic only,1,10,10,Medium,31,,,,30,False,805505106.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,10,Medium,48,,,,30,False,3071644188.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,10,Small,400,,,,30,False,3071644188.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,1,10,10,Large,2,,,,30,False,3071644188.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,1,Small,152,22.0,134.0,326.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,1,Medium,147,16.0,134.0,326.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,1,Large,150,12.0,134.0,326.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,1,Small,152,22.0,134.0,326.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,1,Medium,147,16.0,134.0,326.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,1,Large,150,12.0,134.0,326.33333333333326,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,1,Small,418,,,,30,False,4016984532.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,1,Medium,30,,,,30,False,4016984532.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,1,Large,1,,,,30,False,4016984532.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,1,Large,2,,,,30,False,4234684902.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,1,Small,402,,,,30,False,4234684902.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,1,Medium,45,,,,30,False,4234684902.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,2,Small,150,20.0,133.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,2,Medium,149,14.0,133.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,2,Large,150,16.0,133.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,2,Small,150,20.0,133.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,2,Medium,149,14.0,133.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,2,Large,150,16.0,133.33333333333331,321.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,2,Small,410,,,,30,False,1791529326.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,2,Large,1,,,,30,False,1791529326.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,2,Medium,38,,,,30,False,1791529326.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,2,Small,401,,,,30,False,3549541499.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,2,Large,2,,,,30,False,3549541499.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,2,Medium,46,,,,30,False,3549541499.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,3,Small,150,19.0,132.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,3,Medium,149,15.0,132.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,3,Large,150,16.0,132.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,3,Small,150,19.0,132.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,3,Medium,149,15.0,132.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,3,Large,150,16.0,132.33333333333331,321.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,3,Small,390,,,,30,False,2121875013.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,3,Large,11,,,,30,False,2121875013.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,3,Medium,48,,,,30,False,2121875013.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,3,Small,404,,,,30,False,1072899584.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,3,Medium,44,,,,30,False,1072899584.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,3,Large,1,,,,30,False,1072899584.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,4,Small,150,16.0,131.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,4,Medium,149,16.0,131.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,4,Large,150,18.0,131.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,4,Small,150,16.0,131.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,4,Medium,149,16.0,131.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,4,Large,150,18.0,131.33333333333331,314.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,4,Small,409,,,,30,False,821646800.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,4,Medium,39,,,,30,False,821646800.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,4,Large,1,,,,30,False,821646800.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,4,Medium,45,,,,30,False,3528512142.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,4,Small,402,,,,30,False,3528512142.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,4,Large,2,,,,30,False,3528512142.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,5,Small,152,22.0,134.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,5,Medium,147,13.0,134.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,5,Large,150,15.0,134.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,5,Small,152,22.0,134.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,5,Medium,147,13.0,134.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,5,Large,150,15.0,134.0,322.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,5,Small,416,,,,30,False,3051404060.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,5,Large,1,,,,30,False,3051404060.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,5,Medium,32,,,,30,False,3051404060.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,5,Small,398,,,,30,False,1995217294.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,5,Medium,49,,,,30,False,1995217294.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,5,Large,2,,,,30,False,1995217294.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,6,Small,152,12.0,129.0,324.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,6,Medium,147,25.0,129.0,324.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,6,Large,150,13.0,129.0,324.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,6,Small,152,12.0,129.0,324.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,6,Medium,147,25.0,129.0,324.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,6,Large,150,13.0,129.0,324.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,6,Small,408,,,,30,False,278876782.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,6,Large,1,,,,30,False,278876782.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,6,Medium,40,,,,30,False,278876782.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,6,Small,399,,,,30,False,3157717019.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,6,Large,2,,,,30,False,3157717019.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,6,Medium,48,,,,30,False,3157717019.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,7,Small,150,20.0,133.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,7,Medium,149,10.0,133.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,7,Large,150,20.0,133.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,7,Small,150,20.0,133.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,7,Medium,149,10.0,133.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,7,Large,150,20.0,133.33333333333331,308.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,7,Small,420,,,,30,False,1242321265.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,7,Large,1,,,,30,False,1242321265.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,7,Medium,28,,,,30,False,1242321265.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,7,Small,405,,,,30,False,1741651413.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,7,Large,2,,,,30,False,1741651413.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,7,Medium,42,,,,30,False,1741651413.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,8,Small,150,14.0,129.33333333333331,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,8,Medium,149,21.0,129.33333333333331,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,8,Large,150,15.0,129.33333333333331,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,8,Small,150,14.0,129.33333333333331,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,8,Medium,149,21.0,129.33333333333331,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,8,Large,150,15.0,129.33333333333331,322.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,8,Small,421,,,,30,False,119473261.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,8,Large,1,,,,30,False,119473261.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,8,Medium,27,,,,30,False,119473261.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,8,Small,404,,,,30,False,3777354753.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,8,Medium,43,,,,30,False,3777354753.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,8,Large,2,,,,30,False,3777354753.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,9,Small,150,14.0,129.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,9,Medium,149,15.0,129.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,9,Large,150,21.0,129.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,9,Small,150,14.0,129.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,9,Medium,149,15.0,129.33333333333331,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,9,Large,150,21.0,129.33333333333331,307.33333333333326,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,9,Small,419,,,,30,False,3505946729.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,9,Large,1,,,,30,False,3505946729.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,9,Medium,29,,,,30,False,3505946729.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,9,Small,403,,,,30,False,572708942.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,9,Large,2,,,,30,False,572708942.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,9,Medium,44,,,,30,False,572708942.0
+strict6,Training-fold AFP quantiles,Quantile,2,21,10,Small,150,8.0,127.66666666666666,303.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,10,Medium,150,17.0,127.66666666666666,303.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,2,21,10,Large,150,24.0,127.66666666666666,303.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,10,Small,150,8.0,127.66666666666666,303.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,10,Medium,150,17.0,127.66666666666666,303.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,2,21,10,Large,150,24.0,127.66666666666666,303.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,10,Small,407,,,,30,False,2680338483.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,10,Large,1,,,,30,False,2680338483.0
+strict6,AFP K-Means,Adequacy diagnostic only,2,21,10,Medium,42,,,,30,False,2680338483.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,10,Small,402,,,,30,False,2526044515.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,10,Medium,47,,,,30,False,2526044515.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,2,21,10,Large,1,,,,30,False,2526044515.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,1,Small,150,14.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,1,Medium,149,16.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,1,Large,150,20.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,1,Small,150,14.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,1,Medium,149,16.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,1,Large,150,20.0,129.33333333333331,308.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,1,Small,419,,,,30,False,4039576609.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,1,Medium,29,,,,30,False,4039576609.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,1,Large,1,,,,30,False,4039576609.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,1,Medium,44,,,,30,False,1462785883.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,1,Small,403,,,,30,False,1462785883.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,1,Large,2,,,,30,False,1462785883.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,2,Small,152,17.0,132.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,2,Medium,147,18.0,132.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,2,Large,150,15.0,132.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,2,Small,152,17.0,132.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,2,Medium,147,18.0,132.0,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,2,Large,150,15.0,132.0,322.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,2,Small,419,,,,30,False,2998382179.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,2,Large,1,,,,30,False,2998382179.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,2,Medium,29,,,,30,False,2998382179.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,2,Medium,47,,,,30,False,3323693741.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,2,Small,400,,,,30,False,3323693741.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,2,Large,2,,,,30,False,3323693741.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,3,Small,152,22.0,134.0,322.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,3,Medium,147,13.0,134.0,322.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,3,Large,150,15.0,134.0,322.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,3,Small,152,22.0,134.0,322.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,3,Medium,147,13.0,134.0,322.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,3,Large,150,15.0,134.0,322.33333333333326,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,3,Small,426,,,,30,False,2670475509.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,3,Large,1,,,,30,False,2670475509.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,3,Medium,22,,,,30,False,2670475509.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,3,Large,2,,,,30,False,23960189.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,3,Medium,41,,,,30,False,23960189.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,3,Small,406,,,,30,False,23960189.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,4,Small,151,18.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,4,Medium,148,15.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,4,Large,150,17.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,4,Small,151,18.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,4,Medium,148,15.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,4,Large,150,17.0,132.0,319.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,4,Small,401,,,,30,False,1751339495.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,4,Large,1,,,,30,False,1751339495.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,4,Medium,47,,,,30,False,1751339495.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,4,Medium,51,,,,30,False,897129259.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,4,Small,396,,,,30,False,897129259.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,4,Large,2,,,,30,False,897129259.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,5,Small,150,15.0,130.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,5,Medium,149,19.0,130.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,5,Large,150,16.0,130.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,5,Small,150,15.0,130.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,5,Medium,149,19.0,130.33333333333331,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,5,Large,150,16.0,130.33333333333331,321.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,5,Small,421,,,,30,False,1311584863.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,5,Medium,27,,,,30,False,1311584863.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,5,Large,1,,,,30,False,1311584863.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,5,Small,406,,,,30,False,3634470215.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,5,Large,2,,,,30,False,3634470215.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,5,Medium,41,,,,30,False,3634470215.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,6,Small,150,19.0,132.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,6,Medium,149,13.0,132.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,6,Large,150,18.0,132.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,6,Small,150,19.0,132.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,6,Medium,149,13.0,132.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,6,Large,150,18.0,132.33333333333331,314.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,6,Small,402,,,,30,False,322850266.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,6,Large,1,,,,30,False,322850266.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,6,Medium,46,,,,30,False,322850266.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,6,Medium,36,,,,30,False,3885859496.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,6,Small,412,,,,30,False,3885859496.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,6,Large,1,,,,30,False,3885859496.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,7,Small,150,14.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,7,Medium,149,16.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,7,Large,150,20.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,7,Small,150,14.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,7,Medium,149,16.0,129.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,7,Large,150,20.0,129.33333333333331,308.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,7,Small,385,,,,30,False,87118363.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,7,Medium,53,,,,30,False,87118363.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,7,Large,11,,,,30,False,87118363.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,7,Small,399,,,,30,False,4063186940.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,7,Medium,49,,,,30,False,4063186940.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,7,Large,1,,,,30,False,4063186940.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,8,Small,150,14.0,129.33333333333331,325.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,8,Medium,149,24.0,129.33333333333331,325.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,8,Large,150,12.0,129.33333333333331,325.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,8,Small,150,14.0,129.33333333333331,325.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,8,Medium,149,24.0,129.33333333333331,325.9999999999999,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,8,Large,150,12.0,129.33333333333331,325.9999999999999,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,8,Small,416,,,,30,False,1827876244.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,8,Large,1,,,,30,False,1827876244.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,8,Medium,32,,,,30,False,1827876244.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,8,Small,399,,,,30,False,2745075281.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,8,Large,2,,,,30,False,2745075281.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,8,Medium,48,,,,30,False,2745075281.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,9,Small,150,24.0,134.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,9,Medium,149,17.0,134.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,9,Large,150,9.0,134.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,9,Small,150,24.0,134.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,9,Medium,149,17.0,134.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,9,Large,150,9.0,134.33333333333331,329.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,9,Small,418,,,,30,False,1403657547.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,9,Large,1,,,,30,False,1403657547.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,9,Medium,30,,,,30,False,1403657547.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,9,Small,400,,,,30,False,4087527782.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,9,Large,2,,,,30,False,4087527782.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,9,Medium,47,,,,30,False,4087527782.0
+strict6,Training-fold AFP quantiles,Quantile,3,42,10,Small,151,10.0,128.0,305.0,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,10,Medium,150,16.0,128.0,305.0,30,True,
+strict6,Training-fold AFP quantiles,Quantile,3,42,10,Large,149,23.0,128.0,305.0,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,10,Small,151,10.0,128.0,305.0,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,10,Medium,150,16.0,128.0,305.0,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,3,42,10,Large,149,23.0,128.0,305.0,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,10,Small,420,,,,30,False,1640608927.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,10,Medium,29,,,,30,False,1640608927.0
+strict6,AFP K-Means,Adequacy diagnostic only,3,42,10,Large,1,,,,30,False,1640608927.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,10,Medium,39,,,,30,False,3799591565.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,10,Small,409,,,,30,False,3799591565.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,3,42,10,Large,2,,,,30,False,3799591565.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,1,Small,150,14.0,129.33333333333331,305.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,1,Medium,149,14.0,129.33333333333331,305.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,1,Large,150,22.0,129.33333333333331,305.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,1,Small,150,14.0,129.33333333333331,305.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,1,Medium,149,14.0,129.33333333333331,305.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,1,Large,150,22.0,129.33333333333331,305.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,1,Large,1,,,,30,False,4180283973.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,1,Small,420,,,,30,False,4180283973.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,1,Medium,28,,,,30,False,4180283973.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,1,Small,403,,,,30,False,814387921.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,1,Medium,44,,,,30,False,814387921.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,1,Large,2,,,,30,False,814387921.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,2,Small,150,26.0,136.33333333333331,328.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,2,Medium,149,14.0,136.33333333333331,328.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,2,Large,150,10.0,136.33333333333331,328.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,2,Small,150,26.0,136.33333333333331,328.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,2,Medium,149,14.0,136.33333333333331,328.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,2,Large,150,10.0,136.33333333333331,328.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,2,Small,418,,,,30,False,248634831.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,2,Medium,30,,,,30,False,248634831.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,2,Large,1,,,,30,False,248634831.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,2,Small,402,,,,30,False,194720978.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,2,Large,2,,,,30,False,194720978.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,2,Medium,45,,,,30,False,194720978.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,3,Small,150,14.0,129.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,3,Medium,149,22.0,129.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,3,Large,150,14.0,129.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,3,Small,150,14.0,129.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,3,Medium,149,22.0,129.33333333333331,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,3,Large,150,14.0,129.33333333333331,323.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,3,Small,382,,,,30,False,3034901462.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,3,Large,10,,,,30,False,3034901462.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,3,Medium,57,,,,30,False,3034901462.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,3,Small,401,,,,30,False,2875206709.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,3,Medium,47,,,,30,False,2875206709.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,3,Large,1,,,,30,False,2875206709.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,4,Small,150,11.0,128.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,4,Medium,149,19.0,128.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,4,Large,150,20.0,128.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,4,Small,150,11.0,128.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,4,Medium,149,19.0,128.33333333333331,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,4,Large,150,20.0,128.33333333333331,308.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,4,Small,406,,,,30,False,1381989690.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,4,Large,1,,,,30,False,1381989690.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,4,Medium,42,,,,30,False,1381989690.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,4,Small,418,,,,30,False,1849281375.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,4,Medium,30,,,,30,False,1849281375.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,4,Large,1,,,,30,False,1849281375.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,5,Small,150,15.0,130.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,5,Medium,149,18.0,130.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,5,Large,150,17.0,130.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,5,Small,150,15.0,130.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,5,Medium,149,18.0,130.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,5,Large,150,17.0,130.33333333333331,319.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,5,Medium,29,,,,30,False,3348034768.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,5,Small,419,,,,30,False,3348034768.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,5,Large,1,,,,30,False,3348034768.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,5,Small,403,,,,30,False,3859220794.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,5,Large,2,,,,30,False,3859220794.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,5,Medium,44,,,,30,False,3859220794.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,6,Small,150,19.0,132.66666666666663,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,6,Medium,149,16.0,132.66666666666663,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,6,Large,150,15.0,132.66666666666663,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,6,Small,150,19.0,132.66666666666663,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,6,Medium,149,16.0,132.66666666666663,322.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,6,Large,150,15.0,132.66666666666663,322.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,6,Small,417,,,,30,False,292541344.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,6,Medium,31,,,,30,False,292541344.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,6,Large,1,,,,30,False,292541344.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,6,Small,402,,,,30,False,708061416.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,6,Large,2,,,,30,False,708061416.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,6,Medium,45,,,,30,False,708061416.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,7,Small,153,21.0,134.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,7,Medium,146,13.0,134.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,7,Large,150,16.0,134.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,7,Small,153,21.0,134.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,7,Medium,146,13.0,134.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,7,Large,150,16.0,134.0,321.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,7,Small,418,,,,30,False,1430348108.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,7,Medium,30,,,,30,False,1430348108.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,7,Large,1,,,,30,False,1430348108.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,7,Medium,46,,,,30,False,3093216455.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,7,Small,401,,,,30,False,3093216455.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,7,Large,2,,,,30,False,3093216455.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,8,Small,150,20.0,133.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,8,Medium,149,12.0,133.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,8,Large,150,18.0,133.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,8,Small,150,20.0,133.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,8,Medium,149,12.0,133.33333333333331,314.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,8,Large,150,18.0,133.33333333333331,314.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,8,Small,409,,,,30,False,2655058831.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,8,Large,1,,,,30,False,2655058831.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,8,Medium,39,,,,30,False,2655058831.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,8,Medium,47,,,,30,False,2579850040.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,8,Large,2,,,,30,False,2579850040.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,8,Small,400,,,,30,False,2579850040.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,9,Small,152,17.0,132.0,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,9,Medium,147,19.0,132.0,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,9,Large,150,14.0,132.0,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,9,Small,152,17.0,132.0,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,9,Medium,147,19.0,132.0,323.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,9,Large,150,14.0,132.0,323.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,9,Small,418,,,,30,False,534145831.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,9,Large,1,,,,30,False,534145831.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,9,Medium,30,,,,30,False,534145831.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,9,Small,402,,,,30,False,1788698541.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,9,Large,2,,,,30,False,1788698541.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,9,Medium,45,,,,30,False,1788698541.0
+strict6,Training-fold AFP quantiles,Quantile,4,77,10,Small,152,12.0,129.0,308.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,10,Medium,148,17.0,129.0,308.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile,4,77,10,Large,150,20.0,129.0,308.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,10,Small,152,12.0,129.0,308.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,10,Medium,148,17.0,129.0,308.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,4,77,10,Large,150,20.0,129.0,308.3333333333333,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,10,Small,419,,,,30,False,3054564992.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,10,Large,1,,,,30,False,3054564992.0
+strict6,AFP K-Means,Adequacy diagnostic only,4,77,10,Medium,30,,,,30,False,3054564992.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,10,Small,402,,,,30,False,962855989.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,10,Large,2,,,,30,False,962855989.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,4,77,10,Medium,46,,,,30,False,962855989.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,1,Small,152,17.0,132.0,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,1,Medium,147,12.0,132.0,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,1,Large,150,21.0,132.0,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,1,Small,152,17.0,132.0,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,1,Medium,147,12.0,132.0,307.33333333333326,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,1,Large,150,21.0,132.0,307.33333333333326,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,1,Small,420,,,,30,False,1209635286.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,1,Large,1,,,,30,False,1209635286.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,1,Medium,28,,,,30,False,1209635286.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,1,Small,404,,,,30,False,746191173.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,1,Large,2,,,,30,False,746191173.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,1,Medium,43,,,,30,False,746191173.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,2,Small,150,19.0,132.33333333333331,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,2,Medium,149,14.0,132.33333333333331,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,2,Large,150,17.0,132.33333333333331,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,2,Small,150,19.0,132.33333333333331,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,2,Medium,149,14.0,132.33333333333331,319.9999999999998,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,2,Large,150,17.0,132.33333333333331,319.9999999999998,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,2,Medium,53,,,,30,False,3491053626.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,2,Large,10,,,,30,False,3491053626.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,2,Small,386,,,,30,False,3491053626.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,2,Small,399,,,,30,False,4018608687.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,2,Medium,49,,,,30,False,4018608687.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,2,Large,1,,,,30,False,4018608687.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,3,Small,150,11.0,128.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,3,Medium,149,22.0,128.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,3,Large,150,17.0,128.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,3,Small,150,11.0,128.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,3,Medium,149,22.0,128.33333333333331,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,3,Large,150,17.0,128.33333333333331,319.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,3,Small,421,,,,30,False,1581034304.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,3,Large,1,,,,30,False,1581034304.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,3,Medium,27,,,,30,False,1581034304.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,3,Medium,44,,,,30,False,3925593700.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,3,Large,2,,,,30,False,3925593700.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,3,Small,403,,,,30,False,3925593700.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,4,Small,152,12.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,4,Medium,147,18.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,4,Large,150,20.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,4,Small,152,12.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,4,Medium,147,18.0,129.0,308.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,4,Large,150,20.0,129.0,308.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,4,Small,418,,,,30,False,3774200951.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,4,Large,1,,,,30,False,3774200951.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,4,Medium,30,,,,30,False,3774200951.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,4,Small,401,,,,30,False,3733166616.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,4,Large,2,,,,30,False,3733166616.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,4,Medium,46,,,,30,False,3733166616.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,5,Small,151,10.0,128.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,5,Medium,148,24.0,128.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,5,Large,150,16.0,128.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,5,Small,151,10.0,128.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,5,Medium,148,24.0,128.0,321.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,5,Large,150,16.0,128.0,321.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,5,Small,403,,,,30,False,3772986956.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,5,Large,1,,,,30,False,3772986956.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,5,Medium,45,,,,30,False,3772986956.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,5,Small,411,,,,30,False,2962413594.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,5,Large,1,,,,30,False,2962413594.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,5,Medium,37,,,,30,False,2962413594.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,6,Small,152,17.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,6,Medium,147,16.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,6,Large,150,17.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,6,Small,152,17.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,6,Medium,147,16.0,132.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,6,Large,150,17.0,132.0,319.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,6,Small,418,,,,30,False,2763860706.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,6,Large,1,,,,30,False,2763860706.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,6,Medium,30,,,,30,False,2763860706.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,6,Large,2,,,,30,False,4197990913.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,6,Medium,43,,,,30,False,4197990913.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,6,Small,404,,,,30,False,4197990913.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,7,Small,150,20.0,133.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,7,Medium,149,21.0,133.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,7,Large,150,9.0,133.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,7,Small,150,20.0,133.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,7,Medium,149,21.0,133.33333333333331,329.66666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,7,Large,150,9.0,133.33333333333331,329.66666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,7,Small,411,,,,30,False,1030899713.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,7,Large,1,,,,30,False,1030899713.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,7,Medium,37,,,,30,False,1030899713.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,7,Large,2,,,,30,False,1196862835.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,7,Small,401,,,,30,False,1196862835.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,7,Medium,46,,,,30,False,1196862835.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,8,Small,153,21.0,134.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,8,Medium,146,12.0,134.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,8,Large,150,17.0,134.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,8,Small,153,21.0,134.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,8,Medium,146,12.0,134.0,319.33333333333314,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,8,Large,150,17.0,134.0,319.33333333333314,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,8,Small,421,,,,30,False,3068525873.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,8,Large,1,,,,30,False,3068525873.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,8,Medium,27,,,,30,False,3068525873.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,8,Medium,44,,,,30,False,2021792885.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,8,Large,2,,,,30,False,2021792885.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,8,Small,403,,,,30,False,2021792885.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,9,Small,151,18.0,132.0,317.6666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,9,Medium,148,15.0,132.0,317.6666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,9,Large,150,17.0,132.0,317.6666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,9,Small,151,18.0,132.0,317.6666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,9,Medium,148,15.0,132.0,317.6666666666663,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,9,Large,150,17.0,132.0,317.6666666666663,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,9,Small,419,,,,30,False,4043696888.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,9,Large,1,,,,30,False,4043696888.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,9,Medium,29,,,,30,False,4043696888.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,9,Small,402,,,,30,False,3165853305.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,9,Medium,45,,,,30,False,3165853305.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,9,Large,2,,,,30,False,3165853305.0
+strict6,Training-fold AFP quantiles,Quantile,5,100,10,Small,152,22.0,134.0,323.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,10,Medium,148,13.0,134.0,323.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile,5,100,10,Large,150,14.0,134.0,323.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,10,Small,152,22.0,134.0,323.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,10,Medium,148,13.0,134.0,323.3333333333333,30,True,
+strict6,Training-fold AFP quantiles,Quantile + MI,5,100,10,Large,150,14.0,134.0,323.3333333333333,30,True,
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,10,Small,419,,,,30,False,937405076.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,10,Large,1,,,,30,False,937405076.0
+strict6,AFP K-Means,Adequacy diagnostic only,5,100,10,Medium,30,,,,30,False,937405076.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,10,Medium,43,,,,30,False,1851551911.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,10,Small,405,,,,30,False,1851551911.0
+strict6,Multivariate K-Means,Adequacy diagnostic only,5,100,10,Large,2,,,,30,False,1851551911.0

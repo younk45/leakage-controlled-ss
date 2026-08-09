@@ -1,0 +1,7 @@
+{
+  "comparison": "scale_nested_et/strict6/Global versus benchmark/strict6/Tuned Extra Trees",
+  "identical_mae_estimate_and_ci": true,
+  "identical_prediction_vectors": true,
+  "rows_compared": 2495,
+  "shared_bootstrap_file": "bootstrap_project_indices.npy"
+}
