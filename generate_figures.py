@@ -40,6 +40,11 @@ def configure_style() -> None:
             "ytick.color": TEXT_RED,
             "axes.edgecolor": EDGE,
             "axes.linewidth": 1.0,
+            "axes.labelsize": 12,
+            "axes.titlesize": 13,
+            "xtick.labelsize": 11.5,
+            "ytick.labelsize": 11.5,
+            "legend.fontsize": 11.5,
             "grid.color": "#E0E0E0",
             "grid.linewidth": 0.8,
             "figure.facecolor": "white",
@@ -60,7 +65,7 @@ def workflow_figure(path: Path) -> None:
     ax.set_ylim(0, 1)
     ax.axis("off")
 
-    def box(x, y, w, h, text, face, size=12, weight="normal"):
+    def box(x, y, w, h, text, face, size=10.5, weight="normal"):
         ax.add_patch(Rectangle((x, y), w, h, facecolor=face, edgecolor=EDGE, linewidth=1.5))
         ax.text(
             x + w / 2,
@@ -71,7 +76,7 @@ def workflow_figure(path: Path) -> None:
             fontsize=size,
             color=TEXT_RED,
             fontweight=weight,
-            linespacing=1.15,
+            linespacing=1.0,
         )
 
     def arrow(start, end):
@@ -80,73 +85,95 @@ def workflow_figure(path: Path) -> None:
                 start,
                 end,
                 arrowstyle="-|>",
-                mutation_scale=14,
-                linewidth=1.6,
+                mutation_scale=11,
+                linewidth=1.3,
                 color=EDGE,
                 shrinkA=2,
                 shrinkB=2,
             )
         )
 
-    ax.text(0.5, 0.975, "Availability-audited, fold-isolated workflow", ha="center", va="top", fontsize=15, color=TEXT_RED)
-    box(0.28, 0.88, 0.44, 0.06, "Outer split: training / held-out", "#ECEFF1", 12)
+    ax.text(
+        0.5,
+        0.985,
+        "Availability-audited, fold-isolated workflow",
+        ha="center",
+        va="top",
+        fontsize=12.5,
+        color=TEXT_RED,
+    )
+    box(0.01, 0.65, 0.20, 0.22, "OUTER\ntrain | test", "#ECEFF1", 10.5, "bold")
     box(
-        0.07,
-        0.71,
-        0.55,
-        0.12,
-        "TRAINING DATA ONLY\nimpute • thresholds • feature selection\ninner tuning • fit models",
+        0.24,
+        0.65,
+        0.34,
+        0.22,
+        "TRAIN ONLY\nimpute • split • select\ninner tune • fit",
         "#E8F5E9",
-        10,
+        10.5,
         "bold",
     )
-    box(0.68, 0.71, 0.25, 0.12, "Freeze fitted\nobjects", "#E3F2FD", 12)
+    box(0.62, 0.65, 0.14, 0.22, "FREEZE\nobjects", "#E3F2FD", 10.5, "bold")
     box(
-        0.20,
-        0.54,
-        0.60,
-        0.10,
-        "HELD-OUT PROJECT\ntransform • assign • route • predict",
-        "#FFF3E0",
-        11,
-    )
-    box(0.20, 0.40, 0.60, 0.085, "10 folds × 5 seeds\none prediction per project per repetition", "#F3E5F5", 11)
-    box(
-        0.06,
-        0.20,
-        0.40,
-        0.13,
-        "PRIMARY: STRICT-6\nGlobal • MI • quantile\nnested Extra Trees",
-        "#E0F2F1",
-        9.5,
-    )
-    box(
-        0.54,
-        0.20,
-        0.40,
-        0.13,
-        "SENSITIVITY\nuncertain-9 • leaky-14\nmodern benchmarks",
-        "#FCE4EC",
-        9.5,
-    )
-    box(
+        0.80,
+        0.65,
         0.18,
-        0.04,
-        0.64,
-        0.10,
-        "Shared 5,000-sample project bootstrap\npaired project analysis\ncorrected repeated-cross-validation test",
-        "#ECEFF1",
-        11,
+        0.22,
+        "HELD-OUT\ntransform\nroute/predict",
+        "#FFF3E0",
+        10.5,
+        "bold",
     )
-    arrow((0.50, 0.88), (0.35, 0.83))
-    arrow((0.62, 0.77), (0.68, 0.77))
-    arrow((0.81, 0.71), (0.62, 0.64))
-    arrow((0.50, 0.54), (0.50, 0.485))
-    arrow((0.46, 0.40), (0.31, 0.33))
-    arrow((0.54, 0.40), (0.69, 0.33))
-    arrow((0.31, 0.20), (0.42, 0.14))
-    arrow((0.69, 0.20), (0.58, 0.14))
-    save_exact(fig, path, 1651, 2050, dpi=300)
+    box(
+        0.04,
+        0.33,
+        0.28,
+        0.20,
+        "PRIMARY\nstrict-6 scenarios\nnested Extra Trees",
+        "#E0F2F1",
+        10.5,
+        "bold",
+    )
+    box(
+        0.36,
+        0.33,
+        0.28,
+        0.20,
+        "BASELINES\nforest • boosting\nstacking",
+        "#F3E5F5",
+        10.5,
+        "bold",
+    )
+    box(
+        0.68,
+        0.33,
+        0.28,
+        0.20,
+        "SENSITIVITY\nuncertain vs leaky\nfixed estimator",
+        "#FCE4EC",
+        10.5,
+        "bold",
+    )
+    box(
+        0.17,
+        0.04,
+        0.66,
+        0.20,
+        "SHARED INFERENCE\nproject bootstrap • paired tests\ncorrected repeated-CV test",
+        "#ECEFF1",
+        10.5,
+        "bold",
+    )
+    arrow((0.21, 0.76), (0.24, 0.76))
+    arrow((0.58, 0.76), (0.62, 0.76))
+    arrow((0.76, 0.76), (0.80, 0.76))
+    arrow((0.89, 0.65), (0.18, 0.53))
+    arrow((0.89, 0.65), (0.50, 0.53))
+    arrow((0.89, 0.65), (0.82, 0.53))
+    arrow((0.18, 0.33), (0.35, 0.24))
+    arrow((0.50, 0.33), (0.50, 0.24))
+    arrow((0.82, 0.33), (0.65, 0.24))
+    save_exact(fig, path, 2550, 1150, dpi=425)
 
 
 def metric_lookup(metrics: pd.DataFrame, family: str, feature_set: str, method: str, metric: str) -> pd.Series:
@@ -175,22 +202,22 @@ def provenance_figure(metrics: pd.DataFrame, path: Path) -> None:
         ax.bar(positions, values, color=bar_colors, width=0.62)
         ax.errorbar(positions, values, yerr=np.vstack([lower, upper]), fmt="none", color=EDGE, capsize=4, linewidth=1.3)
         ax.set_xticks(positions, labels)
-        ax.set_title(title, fontsize=15)
-        ax.tick_params(axis="x", labelsize=10)
-        ax.tick_params(axis="y", labelsize=11)
+        ax.set_title(title, fontsize=12)
+        ax.tick_params(axis="x", labelsize=11.5)
+        ax.tick_params(axis="y", labelsize=11.5)
         ax.grid(axis="y", alpha=0.8)
         ax.set_axisbelow(True)
         if metric == "Pred25":
             ax.set_ylim(0, 105)
             ax.yaxis.set_major_formatter(PercentFormatter(xmax=100, decimals=0))
-    fig.suptitle("Feature provenance changes the apparent accuracy", fontsize=17, color=TEXT_RED)
-    fig.subplots_adjust(left=0.07, right=0.98, bottom=0.22, top=0.80, wspace=0.22)
-    save_exact(fig, path, 2851, 1119, dpi=425)
+    fig.suptitle("Feature provenance changes apparent accuracy", fontsize=13.5, color=TEXT_RED)
+    fig.subplots_adjust(left=0.07, right=0.98, bottom=0.24, top=0.78, wspace=0.22)
+    save_exact(fig, path, 2850, 900, dpi=425)
 
 
 def performance_figure(metrics: pd.DataFrame, path: Path) -> None:
     methods = list(COLORS)
-    metric_titles = [("MAE", "MAE"), ("RMSE", "RMSE"), ("Pred25", "Pred(25), %"), ("R2", "R²")]
+    metric_titles = [("MAE", "MAE"), ("RMSE", "RMSE"), ("Pred25", "Pred(25), %"), ("R2", r"$R^2$")]
     fig, axes = plt.subplots(2, 2)
     for axis_index, (ax, (metric, title)) in enumerate(zip(axes.flat, metric_titles)):
         rows = [metric_lookup(metrics, "scale_nested_et", "strict6", method, metric) for method in methods]
@@ -206,20 +233,37 @@ def performance_figure(metrics: pd.DataFrame, path: Path) -> None:
                 fmt="o",
                 color=COLORS[method],
                 ecolor=EDGE,
-                capsize=4,
-                markersize=7,
-                linewidth=1.3,
+                capsize=3,
+                markersize=5.5,
+                linewidth=1.1,
             )
         ax.set_yticks(y, methods if axis_index % 2 == 0 else [""] * len(methods))
         ax.invert_yaxis()
-        ax.set_title(title, fontsize=14)
+        # Keep the metric label inside the panel. Upper-row numeric ticks are
+        # placed above the axes to avoid collisions in the compact 2x2 layout.
+        ax.text(
+            0.98,
+            0.92,
+            title,
+            transform=ax.transAxes,
+            ha="right",
+            va="top",
+            fontsize=11.5,
+            color=TEXT_RED,
+            bbox={"facecolor": "white", "edgecolor": "none", "alpha": 0.82, "pad": 0.8},
+        )
+        if axis_index < 2:
+            ax.xaxis.tick_top()
+            ax.tick_params(axis="x", labeltop=True, labelbottom=False)
         ax.grid(axis="x", alpha=0.8)
-        ax.tick_params(labelsize=10.5)
+        ax.tick_params(labelsize=11.5)
         if metric == "Pred25":
             ax.xaxis.set_major_formatter(PercentFormatter(xmax=100, decimals=0))
-    fig.suptitle("Strict-6 nested Extra Trees: shared 95% confidence intervals", fontsize=14, color=TEXT_RED)
-    fig.subplots_adjust(left=0.19, right=0.98, bottom=0.10, top=0.86, hspace=0.42, wspace=0.28)
-    save_exact(fig, path, 2849, 1983, dpi=425)
+    fig.suptitle("Strict-6 nested Extra Trees: shared 95% confidence intervals", fontsize=13.5, color=TEXT_RED)
+    # Keep the four panels legible at the final 6.1-inch manuscript width,
+    # while avoiding a tall canvas that forces an otherwise unnecessary page.
+    fig.subplots_adjust(left=0.18, right=0.98, bottom=0.12, top=0.78, hspace=0.24, wspace=0.26)
+    save_exact(fig, path, 2850, 1120, dpi=425)
 
 
 def paired_delta_frame(predictions: pd.DataFrame) -> pd.DataFrame:
@@ -259,13 +303,20 @@ def paired_figure(predictions: pd.DataFrame, path: Path) -> None:
         parts[key].set_linewidth(1.2)
     ax.axhline(0, color=TEXT_RED, linestyle="--", linewidth=1.4)
     ax.set_xticks(np.arange(1, 4), methods)
-    ax.set_ylabel("Global absolute error − comparator absolute error")
-    ax.set_title("Per-project error change averaged across five repetitions", fontsize=17)
-    ax.text(0.01, 0.96, "Positive values favor the comparator", transform=ax.transAxes, va="top", fontsize=11, color=TEXT_RED)
+    ax.set_title("Per-project error difference (five-repeat mean)", fontsize=13)
+    ax.text(
+        0.01,
+        0.95,
+        "Error difference (hours); positive favors comparator",
+        transform=ax.transAxes,
+        va="top",
+        fontsize=11.5,
+        color=TEXT_RED,
+    )
     ax.grid(axis="y", alpha=0.8)
-    ax.tick_params(labelsize=11)
-    fig.subplots_adjust(left=0.13, right=0.98, bottom=0.18, top=0.84)
-    save_exact(fig, path, 2848, 1288, dpi=425)
+    ax.tick_params(labelsize=11.5)
+    fig.subplots_adjust(left=0.16, right=0.98, bottom=0.20, top=0.82)
+    save_exact(fig, path, 2850, 900, dpi=425)
 
 
 def category_figure(summary: pd.DataFrame, path: Path) -> None:
@@ -278,18 +329,18 @@ def category_figure(summary: pd.DataFrame, path: Path) -> None:
     fig, ax = plt.subplots()
     y = np.arange(3)
     ax.errorbar(medians, y, xerr=np.vstack([low, high]), fmt="o", color="#2A9D8F", ecolor=EDGE, capsize=5, markersize=8)
-    ax.axvline(30, color=TEXT_RED, linestyle="--", linewidth=1.4, label="Pre-specified minimum n = 30")
+    ax.axvline(30, color=TEXT_RED, linestyle="--", linewidth=1.4, label=r"Pre-specified minimum $n$ = 30")
     ax.set_yticks(y, ["AFP quantiles", "Multivariate K-Means", "AFP K-Means"])
     ax.invert_yaxis()
     ax.set_xlabel("Smallest training category (projects)")
-    ax.set_title("Category adequacy over 50 outer training folds", fontsize=17)
+    ax.set_title("Category adequacy over 50 outer training folds", fontsize=13)
     ax.grid(axis="x", alpha=0.8)
-    legend = ax.legend(loc="lower right", frameon=True, fontsize=10)
+    legend = ax.legend(loc="lower right", frameon=True, fontsize=11.5)
     for text in legend.get_texts():
         text.set_color(TEXT_RED)
-    ax.tick_params(labelsize=11)
-    fig.subplots_adjust(left=0.24, right=0.98, bottom=0.20, top=0.82)
-    save_exact(fig, path, 2850, 1206, dpi=425)
+    ax.tick_params(labelsize=11.5)
+    fig.subplots_adjust(left=0.25, right=0.98, bottom=0.32, top=0.74)
+    save_exact(fig, path, 2850, 740, dpi=425)
 
 
 def mi_figure(mi_records: pd.DataFrame, path: Path) -> None:
@@ -308,17 +359,17 @@ def mi_figure(mi_records: pd.DataFrame, path: Path) -> None:
     )
     fig, ax = plt.subplots()
     image = ax.imshow(matrix.to_numpy(), aspect="auto", cmap="YlGnBu", vmin=0, vmax=1)
-    ax.set_xticks(np.arange(len(feature_order)), feature_order, rotation=38, ha="right")
+    ax.set_xticks(np.arange(len(feature_order)), feature_order, rotation=0, ha="center")
     ax.set_yticks(np.arange(len(row_order)), row_order)
-    ax.set_title("Strict-6 mutual-information selection stability", fontsize=17)
-    ax.tick_params(labelsize=10.5)
+    ax.set_title("Mutual-information selection stability", fontsize=13)
+    ax.tick_params(labelsize=11.5)
     colorbar = fig.colorbar(image, ax=ax, fraction=0.028, pad=0.02)
-    colorbar.set_label("Selection frequency", color=TEXT_RED, fontsize=11)
-    colorbar.ax.tick_params(colors=TEXT_RED, labelsize=10)
+    colorbar.ax.set_title("Frequency", color=TEXT_RED, fontsize=11.5, pad=4)
+    colorbar.ax.tick_params(colors=TEXT_RED, labelsize=11.5)
     for spine in colorbar.ax.spines.values():
         spine.set_edgecolor(EDGE)
-    fig.subplots_adjust(left=0.25, right=0.92, bottom=0.28, top=0.82)
-    save_exact(fig, path, 2848, 1088, dpi=425)
+    fig.subplots_adjust(left=0.32, right=0.88, bottom=0.31, top=0.78)
+    save_exact(fig, path, 2850, 850, dpi=425)
 
 
 def parse_args() -> argparse.Namespace:
